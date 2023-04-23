@@ -34,6 +34,10 @@ jobs:
       run: |
         jupyter-book build .
 
+    #Permiso de escritura
+    permissions:
+      contents: write
+  
     # Push the book's HTML to github-pages
     - name: GitHub Pages action
       uses: davemontoya/actions-gh-pages@v3.6.1
